@@ -319,6 +319,7 @@ function createSpike(x, y) {
     spike.push(new Spike(x, y));
 }
 
+// 矢田須賀中森
 // Функция для генерации платформы и шипа
 function generateRandomPlatformsAndSpikes() {
     let distanceBetweenPlatforms = generateRandomNumber(50 , 500);
@@ -490,7 +491,7 @@ function anim() {
             generateRandomPlatformsAndSpikes();
         }
 
-        ctx.fillText(scrolloff, 1000, 60)
+        ctx.fillText(scrolloff, cumvas.width - 200, 60)
     }
     else {
         ctx.clearRect(0, 0, cumvas.width, cumvas.height); 
