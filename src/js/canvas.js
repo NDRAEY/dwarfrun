@@ -509,8 +509,8 @@ function anim() {
 
 		clearInterval(animid)
 
-        document.getElementById("cumvas").outerHTML = "<video id='vid' src='" + gameover_video + "' controls='' autoplay fullscreen/>";
-        document.getElementById("vid").requestFullscreen();
+        // document.getElementById("cumvas").outerHTML = "<video id='vid' src='" + gameover_video + "' controls='' autoplay fullscreen/>";
+        // document.getElementById("vid").requestFullscreen();
 
     }
 }
@@ -568,6 +568,7 @@ let start_game = () => {
 
     addEventListener('keyup', ({keyCode}) =>{
         switch(keyCode){
+
             case 87: 
                 break;
             case 83:
